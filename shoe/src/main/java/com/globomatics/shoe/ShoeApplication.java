@@ -1,4 +1,5 @@
 //JOSE BEDOLLA
+//SPRINGBOOT AND ANGULAR PROJECT
 package com.globomatics.shoe;
 
 import org.springframework.boot.SpringApplication;
