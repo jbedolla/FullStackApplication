@@ -4,6 +4,7 @@ import com.globomatics.shoe.models.Shoe;
 import com.globomatics.shoe.repositories.ShoeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -26,6 +27,7 @@ public class shoesController {
     public void create(@RequestBody Shoe shoe){
         shoeRepository.save(shoe);
     }
+
 
     @GetMapping("/{id}")
     public Shoe get(@PathVariable("id") long id){
